@@ -1,0 +1,44 @@
+{
+  "name": "svg-sprite-generator",
+  "version": "1.0.0",
+  "description": "svg-sprite-generator",
+  "author": "thyeone",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thyeone/svg-sprite-generator"
+  },
+  "bin": {
+    "svg init": "./dist/cli/init.js",
+    "icon": "./dist/cli/generate.js"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "svg",
+    "sprite",
+    "react",
+    "generator"
+  ],
+  "peerDependencies": {
+    "svgstore": "^3.0.1",
+    "svgstore-cli": "^2.0.1",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
