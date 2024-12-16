@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const sourceFile = path.join(__dirname, "../templates/generate-icons.js");
+const sourceFile = path.join(__dirname, "./generate-icons.js");
 const targetFile = path.join(process.cwd(), "generate-icons.js");
 
 fs.copyFileSync(sourceFile, targetFile);

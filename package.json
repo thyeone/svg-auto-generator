@@ -18,7 +18,8 @@
   },
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "tsc",
