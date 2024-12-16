@@ -10,8 +10,11 @@
     "url": "https://github.com/thyeone/svg-sprite-generator"
   },
   "bin": {
-    "svg init": "./dist/cli/init.js",
-    "icon": "./dist/cli/generate.js"
+    "svg-init": "./dist/init.js",
+    "svg-generate": "./dist/generate.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "type": "module",
   "files": [

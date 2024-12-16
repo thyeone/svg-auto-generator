@@ -6,4 +6,3 @@ tests/
 tsconfig.json
 *.test.ts
 *.spec.ts
-dist
