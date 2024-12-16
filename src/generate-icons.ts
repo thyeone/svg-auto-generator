@@ -6,8 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 설정
-const ICONS_DIR = path.join(__dirname, "../public/icons");
-const SRC_DIR = path.join(__dirname, "../src");
+const ICONS_DIR = path.join(process.cwd(), "public/icons");
+const SRC_DIR = path.join(process.cwd(), "src");
 const COMPONENTS_DIR = path.join(SRC_DIR, "components");
 const UTILS_DIR = path.join(SRC_DIR, "utils");
 const ICON_DIR = path.join(COMPONENTS_DIR, "icon");

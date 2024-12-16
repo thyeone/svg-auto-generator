@@ -3,7 +3,13 @@ import { execSync } from "child_process";
 import path from "path";
 
 try {
-  execSync("node ./generate-icons.js", { stdio: "inherit" });
+  execSync(
+    "node ./node_modules/@thyeone/svg-sprite-generator/dist/generate-icons.js",
+    {
+      stdio: "inherit",
+      cwd: process.cwd(),
+    }
+  );
 
   const iconsPath = path.join(process.cwd(), "public/icons/*.svg");
   const spritePath = path.join(process.cwd(), "public/sprite.svg");

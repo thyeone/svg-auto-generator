@@ -7,12 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "icon": "tsx ./src/generate-icon-types.ts && svgstore -o public/sprite.svg public/icons/*.svg",
-    "generate-icons": "node ./src/generate-icons.js"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@thyeone/svg-sprite-generator": "^1.0.1",
     "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
