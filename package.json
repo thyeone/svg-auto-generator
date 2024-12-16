@@ -1,13 +1,13 @@
 {
-  "name": "svg-auto-generator",
+  "name": "@thyeone/svg-sprite-generator",
   "version": "1.0.0",
-  "description": "svg-auto-generator",
+  "description": "svg-sprite-generator",
   "author": "thyeone",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thyeone/svg-auto-generator"
+    "url": "https://github.com/thyeone/svg-sprite-generator"
   },
   "bin": {
     "svg init": "./dist/cli/init.js",
