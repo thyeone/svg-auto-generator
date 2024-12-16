@@ -1,17 +1,17 @@
 {
   "name": "@thyeone/svg-sprite-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "svg-sprite-generator",
   "author": "thyeone",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thyeone/svg-sprite-generator"
+    "url": "git+https://github.com/thyeone/svg-sprite-generator.git"
   },
   "bin": {
-    "svg-init": "./dist/init.js",
-    "svg-generate": "./dist/generate.js"
+    "svg-init": "dist/init.js",
+    "svg-generate": "dist/generate.js"
   },
   "publishConfig": {
     "access": "public"
