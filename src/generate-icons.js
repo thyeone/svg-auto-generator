@@ -79,9 +79,19 @@ function generateIconTypes() {
     .filter((file) => file.endsWith(".svg"))
     .map((file) => path.basename(file, ".svg"));
 
+  const toPascalCase = (str) => {
+    return str
+      .replace(/[^a-zA-Z0-9]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join("");
+  };
+
   // IconName enum 생성
   const enumContent = `export enum IconName {
-  ${files.map((name) => `${name} = "${name}"`).join(",\n  ")}
+  ${files.map((name) => `${toPascalCase(name)} = "${name}"`).join(",\n  ")}
 }`;
 
   // components 디렉토리가 없으면 생성
