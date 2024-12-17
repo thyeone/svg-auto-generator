@@ -22,7 +22,7 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "mkdir -p dist && cp src/* dist/",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -32,17 +32,12 @@
     "generator"
   ],
   "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "svgstore": "^3.0.1",
-    "svgstore-cli": "^2.0.1",
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "svgstore-cli": "^2.0.1"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.5"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.0.0",
-    "typescript": "^5.0.0"
   }
 }
