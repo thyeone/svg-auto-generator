@@ -33,7 +33,7 @@
     "generator"
   ],
   "peerDependencies": {
-    "react": "^18.0.0",
+    "react": ">=18.0.0",
     "svgstore": "^3.0.1",
     "svgstore-cli": "^2.0.1"
   },
